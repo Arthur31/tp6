@@ -1,0 +1,38 @@
+image: node:10
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - node_modules/
+
+stages:
+  - quality
+  - package
+  - deploy
+
+lint:
+  stage: quality
+  script:
+    - npm install
+    - npm run lint
+
+test:
+  stage: quality
+  script:
+    - npm install
+    - npm run test
+
+build:
+  stage: package
+  script:
+  - npm install
+  - npm run build
+
+heroku:
+  stage: deploy
+  image: ruby:2.6
+  script:
+    - gem install dpl
+    - dpl --provider=heroku --app=tp6-nodejs --api-key=$HEROKU_STAGING_API_KEY
+  only:
+    - master

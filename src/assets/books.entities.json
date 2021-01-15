@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Harry Potter à l'école des sorciers",
+    "description": "Tome 1",
+    "publicationDate": 852076800000,
+    "authors": [
+      "J. K. Rowling"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Harry Potter et la Chambre des secrets",
+    "description": "",
+    "publicationDate": 883612800000,
+    "authors": [
+      "J. K. Rowling"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Harry Potter et le Prisonnier d'Azkaban",
+    "description": "Tome 3",
+    "publicationDate": 915148800000,
+    "authors": [
+      "J. K. Rowling"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Harry Potter et la Coupe de feu",
+    "description": "Tome 4",
+    "publicationDate": 946684800000,
+    "authors": [
+      "J. K. Rowling"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Harry Potter et l'Ordre du phénix",
+    "description": "Tome 5",
+    "publicationDate": 1041379200000,
+    "authors": [
+      "J. K. Rowling"
+    ]
+  }
+]
